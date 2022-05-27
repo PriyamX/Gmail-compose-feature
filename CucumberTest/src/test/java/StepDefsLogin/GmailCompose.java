@@ -67,6 +67,7 @@ public class GmailCompose {
 		driver.findElement(By.xpath(
 				"/html/body/div[7]/div[3]/div/div[2]/div[1]/div[2]/div/div/div/div/div[2]/div/div[1]/div/div/div[8]/div/div[1]/div[3]/div/table/tbody/tr[1]/td[4]/div[2]/span/span"))
 				.click();
+		Thread.sleep(2000);
 		driver.close();
 		driver.quit();
 
