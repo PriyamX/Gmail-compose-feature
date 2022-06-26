@@ -39,11 +39,14 @@ public class FlipkartPrintPrice {
 		//	Thread.sleep(4000);
 	}
 	@And("searches for a mobile device")
-	public void searches_for_a_mobile_device() {
+	public void searches_for_a_mobile_device() throws InterruptedException {
 		//closes login alert and enters name of mobile device in search bar
 		driver.findElement(By.xpath("//*[@class=\"_2KpZ6l _2doB4z\"]")).click();
+		Thread.sleep(1000);
 		driver.findElement(By.xpath("//*[@class=\"_3704LK\"]")).sendKeys("Realme" + Keys.ENTER);
+		Thread.sleep(1000);
 		driver.findElement(By.xpath("//*[@class=\"_4rR01T\"]")).click();
+		Thread.sleep(1000);
 	}
 
 	@And("adds mobile to cart increasing the quantity by one")
