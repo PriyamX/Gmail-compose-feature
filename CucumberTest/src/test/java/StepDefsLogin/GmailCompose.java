@@ -50,11 +50,11 @@ public class GmailCompose {
 		Thread.sleep(500);
 		driver.findElement(By.xpath("//*[@class=\"vO\"]")).sendKeys("testuser192748@gmail.com");
 		Thread.sleep(500);
-		driver.findElement(By.xpath("//*[@name=\"subjectbox\"]")).sendKeys("Incubyte");
+		driver.findElement(By.xpath("//*[@name=\"subjectbox\"]")).sendKeys("Incubyte Deliverables:1");
 		Thread.sleep(500);
 		element = driver.findElement(By.xpath("//div[@class='Ar Au']//div"));
 		element.click();
-		element.sendKeys("Hi user, \n" + "Automation QA test by Incubyte");
+		element.sendKeys("Hi user, \n" + "Automation QA test for Incubyte");
 		Thread.sleep(500);
 		driver.findElement(By.xpath("//*[@class=\"T-I J-J5-Ji aoO v7 T-I-atl L3\"]")).click();
 		Thread.sleep(500);

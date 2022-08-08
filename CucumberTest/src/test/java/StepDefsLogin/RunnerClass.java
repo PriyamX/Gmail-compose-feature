@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(features = "src/test/resources/Features", glue = { "StepDefsLogin" }, monochrome = true,
 
 		plugin = { "pretty", "json:target/JSONReports/report.json", "html:target/HtmlReports",
-				"junit:target/JUnitReports/report.xml" }, tags = "@Flipkart")
+				"junit:target/JUnitReports/report.xml" }, tags = "@Gmailcompose")
 
 public class RunnerClass {
 
